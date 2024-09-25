@@ -1,0 +1,38 @@
+L0_DIR="/home/lees/projects/my-app"
+L1_DIR="/home/lees/projects/my-app/citadel/app"
+L0_DIR_DEBUG="/home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/levels"
+L0_DIR_DEBUG_BIN="/home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/levels.bin"
+L1_DIR_DEBUG="/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/main"
+L1_DIR_DEBUG_BIN="/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/main.bin"
+
+build_l0(){ 
+    cd $L0_DIR
+    DEFMT_LOG=trace DEFMT_RTT_BUFFER_SIZE=512 cargo build
+    arm-none-eabi-objcopy -O binary $L0_DIR_DEBUG $L0_DIR_DEBUG_BIN
+}
+
+build_l1(){ 
+    cd $L1_DIR
+    DEFMT_LOG=trace DEFMT_RTT_BUFFER_SIZE=1024 cargo build
+    arm-none-eabi-objcopy -O binary $L1_DIR_DEBUG $L1_DIR_DEBUG_BIN
+}
+
+flash_impl(){ 
+    st-flash write $1 $2
+}
+
+flash_l0(){ 
+    flash_impl $L0_DIR_DEBUG_BIN 0x08000000
+}
+
+flash_l1(){ 
+    flash_impl $L1_DIR_DEBUG_BIN 0x08004000
+}
+
+build_and_flash(){ 
+    build_l0
+    build_l1
+    flash_l0
+    flash_l1
+    cd $L0_DIR
+}

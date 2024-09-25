@@ -1,0 +1,777 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 PROVIDE ( NonMaskableInt = DefaultHandler )
+       0        0        0     1 PROVIDE ( MemoryManagement = DefaultHandler )
+       0        0        0     1 PROVIDE ( BusFault = DefaultHandler )
+       0        0        0     1 PROVIDE ( UsageFault = DefaultHandler )
+       0        0        0     1 PROVIDE ( SVCall = DefaultHandler )
+       0        0        0     1 PROVIDE ( DebugMonitor = DefaultHandler )
+       0        0        0     1 PROVIDE ( PendSV = DefaultHandler )
+       0        0        0     1 PROVIDE ( SysTick = DefaultHandler )
+       0        0        0     1 PROVIDE ( DefaultHandler = DefaultHandler_ )
+       0        0        0     1 PROVIDE ( __pre_init = DefaultPreInit )
+       0        0        0     1 PROVIDE ( _stack_start = ORIGIN ( RAM ) + LENGTH ( RAM ) )
+ 8000000  8000000      198     4 .vector_table
+ 8000000  8000000        0     1         __vector_table = .
+ 8000000  8000000        4     1         LONG ( _stack_start & 0xFFFFFFF8 )
+ 8000004  8000004        4     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.vector_table.reset_vector)
+ 8000004  8000004        4     1                 __RESET_VECTOR
+ 8000008  8000008        0     1         __reset_vector = .
+ 8000008  8000008       38     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.vector_table.exceptions)
+ 8000008  8000008       38     1                 __EXCEPTIONS
+ 8000040  8000040        0     1         __eexceptions = .
+ 8000040  8000040      158     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.vector_table.interrupts)
+ 8000040  8000040      158     1                 __INTERRUPTS
+ 8000198  8000198        0     1 PROVIDE ( _stext = ADDR ( .vector_table ) + SIZEOF ( .vector_table ) )
+ 8000198  8000198     1990     4 .text
+ 8000198  8000198        0     1         __stext = .
+ 8000198  8000198       58     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.Reset)
+ 8000198  8000198        0     1                 $t.1
+ 8000199  8000199       3e     1                 Reset
+ 80001d8  80001d8        0     1                 $d.9
+ 80001f0  80001f0        8     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.text.main)
+ 80001f0  80001f0        0     1                 $t.0
+ 80001f1  80001f1        8     1                 main
+ 80001f8  80001f8       50     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.text._ZN6levels18__cortex_m_rt_main17h691acfa1a0a53c3eE)
+ 80001f8  80001f8        0     1                 $t.1
+ 80001f9  80001f9       50     1                 levels::__cortex_m_rt_main::h691acfa1a0a53c3e
+ 8000230  8000230        0     1                 $d.2
+ 8000248  8000248        c     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.text._ZN6my_app23__cortex_m_rt_HardFault17h21bb11a6043bd894E)
+ 8000248  8000248        0     1                 $t.4
+ 8000249  8000249        c     1                 my_app::__cortex_m_rt_HardFault::h21bb11a6043bd894
+ 8000254  8000254        6     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.text._ZN44_$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$3fmt17h574b1c0f6ed1dc59E)
+ 8000254  8000254        0     1                 $t.0
+ 8000255  8000255        6     1                 _$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$::fmt::h574b1c0f6ed1dc59
+ 800025c  800025c       20     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.text._ZN5defmt6export3fmt17h16a6fee8d069f8f5E)
+ 800025c  800025c        0     1                 $t.1
+ 800025d  800025d       20     1                 defmt::export::fmt::h16a6fee8d069f8f5
+ 8000278  8000278        0     1                 $d.2
+ 800027c  800027c        c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.text._ZN88_$LT$defmt..impls..adapter..Display2Format$LT$T$GT$$u20$as$u20$defmt..traits..Format$GT$12_format_data17hfdc1311339ee5e46E)
+ 800027c  800027c        0     1                 $t.5
+ 800027d  800027d        c     1                 _$LT$defmt..impls..adapter..Display2Format$LT$T$GT$$u20$as$u20$defmt..traits..Format$GT$::_format_data::hfdc1311339ee5e46
+ 8000284  8000284        0     1                 $d.6
+ 8000288  8000288        8     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.text._ZN8cortex_m3asm3udf17hec18ecb22ac91811E)
+ 8000288  8000288        0     1                 $t.7
+ 8000289  8000289        8     1                 cortex_m::asm::udf::hec18ecb22ac91811
+ 8000290  8000290       3c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.text.rust_begin_unwind)
+ 8000290  8000290        0     1                 $t.8
+ 8000291  8000291       3c     1                 rust_begin_unwind
+ 80002c4  80002c4        0     1                 $d.9
+ 80002cc  80002cc       18     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.text._ZN11panic_probe10hard_fault17h90dd9e4dbe5db824E)
+ 80002cc  80002cc        0     1                 $t.10
+ 80002cd  80002cd       18     1                 panic_probe::hard_fault::h90dd9e4dbe5db824
+ 80002e0  80002e0        0     1                 $d.11
+ 80002e4  80002e4       20     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN4core10intrinsics19copy_nonoverlapping18precondition_check17h011bceb523abbfa3E)
+ 80002e4  80002e4        0     1                 $t.0
+ 80002e5  80002e5       20     1                 core::intrinsics::copy_nonoverlapping::precondition_check::h011bceb523abbfa3
+ 8000300  8000300        0     1                 $d.1
+ 8000304  8000304       64     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN4core3ops8function5FnMut8call_mut17h9b6796f611b61d2cE)
+ 8000304  8000304        0     1                 $t.2
+ 8000305  8000305       64     1                 core::ops::function::FnMut::call_mut::h9b6796f611b61d2c
+ 8000358  8000358        0     1                 $d.3
+ 8000368  8000368       1a     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN5defmt8encoding5inner7Encoder11start_frame17h08bca86f8046bba1E)
+ 8000368  8000368        0     1                 $t.4
+ 8000369  8000369       1a     1                 defmt::encoding::inner::Encoder::start_frame::h08bca86f8046bba1
+ 8000384  8000384       a4     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN5defmt8encoding5inner7Encoder5write17hf193c1a193f129bbE)
+ 8000384  8000384        0     1                 $t.5
+ 8000385  8000385       a4     1                 defmt::encoding::inner::Encoder::write::hf193c1a193f129bb
+ 8000424  8000424        0     1                 $d.6
+ 8000428  8000428        a     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN5defmt8encoding5inner7Encoder5write28_$u7b$$u7b$closure$u7d$$u7d$17h86e6344be552b4cfE)
+ 8000428  8000428        0     1                 $t.7
+ 8000429  8000429        a     1                 defmt::encoding::inner::Encoder::write::_$u7b$$u7b$closure$u7d$$u7d$::h86e6344be552b4cf
+ 8000432  8000432       38     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN5defmt8encoding5inner7Encoder9end_frame17h85f0eb075679fedfE)
+ 8000432  8000432        0     1                 $t.8
+ 8000433  8000433       38     1                 defmt::encoding::inner::Encoder::end_frame::h85f0eb075679fedf
+ 800046c  800046c       58     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN9defmt_rtt7channel7Channel14blocking_write17he7230055ee6c11f2E)
+ 800046c  800046c        0     1                 $t.12
+ 800046d  800046d       58     1                 defmt_rtt::channel::Channel::blocking_write::he7230055ee6c11f2
+ 80004bc  80004bc        0     1                 $d.13
+ 80004c4  80004c4       16     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN9defmt_rtt7channel7Channel17nonblocking_write17h1c556ea25ae8868fE)
+ 80004c4  80004c4        0     1                 $t.14
+ 80004c5  80004c5       16     1                 defmt_rtt::channel::Channel::nonblocking_write::h1c556ea25ae8868f
+ 80004dc  80004dc       b4     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN9defmt_rtt7channel7Channel10write_impl17h038634ab377a9659E)
+ 80004dc  80004dc        0     1                 $t.15
+ 80004dd  80004dd       b4     1                 defmt_rtt::channel::Channel::write_impl::h038634ab377a9659
+ 8000584  8000584        0     1                 $d.16
+ 8000590  8000590       4c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN59_$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$7acquire17hfe411f7991cc0236E)
+ 8000590  8000590        0     1                 $t.17
+ 8000591  8000591       4c     1                 _$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$::acquire::hfe411f7991cc0236
+ 80005d0  80005d0        0     1                 $d.18
+ 80005dc  80005dc       1c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN59_$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$5flush17hfd6c6d7784946f12E)
+ 80005dc  80005dc        0     1                 $t.19
+ 80005dd  80005dd       1c     1                 _$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$::flush::hfd6c6d7784946f12
+ 80005f4  80005f4        0     1                 $d.20
+ 80005f8  80005f8       20     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN59_$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$7release17hd1ae8f7dad443d69E)
+ 80005f8  80005f8        0     1                 $t.21
+ 80005f9  80005f9       20     1                 _$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$::release::hd1ae8f7dad443d69
+ 8000614  8000614        0     1                 $d.22
+ 8000618  8000618       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._ZN59_$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$5write17h8e7c0784e4051987E)
+ 8000618  8000618        0     1                 $t.23
+ 8000619  8000619       10     1                 _$LT$defmt_rtt..Logger$u20$as$u20$defmt..traits..Logger$GT$::write::h8e7c0784e4051987
+ 8000624  8000624        0     1                 $d.24
+ 8000628  8000628        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._defmt_acquire)
+ 8000628  8000628        0     1                 $t.25
+ 8000629  8000629        4     1                 _defmt_acquire
+ 800062c  800062c        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._defmt_flush)
+ 800062c  800062c        0     1                 $t.26
+ 800062d  800062d        4     1                 _defmt_flush
+ 8000630  8000630        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._defmt_release)
+ 8000630  8000630        0     1                 $t.27
+ 8000631  8000631        4     1                 _defmt_release
+ 8000634  8000634        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text._defmt_write)
+ 8000634  8000634        0     1                 $t.28
+ 8000635  8000635        4     1                 _defmt_write
+ 8000638  8000638        a     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.text.OUTLINED_FUNCTION_0)
+ 8000638  8000638        0     1                 $t.29
+ 8000639  8000639        a     1                 OUTLINED_FUNCTION_0
+ 8000644  8000644       50     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal4gpio7convert62_$LT$impl$u20$stm32f4xx_hal..gpio..Pin$LT$_$C$_$C$MODE$GT$$GT$21into_push_pull_output17hecff516fbe3e50e8E)
+ 8000644  8000644        0     1                 $t.0
+ 8000645  8000645       50     1                 stm32f4xx_hal::gpio::convert::_$LT$impl$u20$stm32f4xx_hal..gpio..Pin$LT$_$C$_$C$MODE$GT$$GT$::into_push_pull_output::hecff516fbe3e50e8
+ 800068c  800068c        0     1                 $d.1
+ 8000694  8000694       1c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.text._ZN4core3ptr13read_volatile17heeafffc28b87c87dE)
+ 8000694  8000694        0     1                 $t.2
+ 8000695  8000695       1c     1                 core::ptr::read_volatile::heeafffc28b87c87d
+ 80006ac  80006ac        0     1                 $d.3
+ 80006b0  80006b0       1c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.text._ZN4core3ptr14write_volatile17h303b52924df2f5b8E)
+ 80006b0  80006b0        0     1                 $t.4
+ 80006b1  80006b1       1c     1                 core::ptr::write_volatile::h303b52924df2f5b8
+ 80006c8  80006c8        0     1                 $d.5
+ 80006cc  80006cc        e     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.text._ZN8cortex_m8register7primask4read17h2efae8b2b8462c2aE)
+ 80006cc  80006cc        0     1                 $t.6
+ 80006cd  80006cd        e     1                 cortex_m::register::primask::read::h2efae8b2b8462c2a
+ 80006dc  80006dc       b4     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.text._ZN10gated_boot15jump_to_address17h7898b629d590e3e4E)
+ 80006dc  80006dc        0     1                 $t.7
+ 80006dd  80006dd       b4     1                 gated_boot::jump_to_address::h7898b629d590e3e4
+ 8000770  8000770        0     1                 $d.8
+ 8000790  8000790        8     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h2172bdc0f057f376E)
+ 8000790  8000790        0     1                 $t.0
+ 8000791  8000791        8     1                 _$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$::fmt::h2172bdc0f057f376
+ 8000791  8000791        8     1                 _$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$::fmt::h948d60d919ccca78
+ 8000798  8000798       8a     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN4core3fmt5Write10write_char17h1d4ceaa87711cfb8E)
+ 8000798  8000798        0     1                 $t.1
+ 8000799  8000799       8a     1                 core::fmt::Write::write_char::h1d4ceaa87711cfb8
+ 8000824  8000824        c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN4core3fmt5Write9write_fmt17h123fb524a78f58e4E)
+ 8000824  8000824        0     1                 $t.2
+ 8000825  8000825        c     1                 core::fmt::Write::write_fmt::h123fb524a78f58e4
+ 800082c  800082c        0     1                 $d.3
+ 8000830  8000830       14     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN5defmt6export4istr17h1159eb26a6442e00E)
+ 8000830  8000830        0     1                 $t.16
+ 8000831  8000831       14     1                 defmt::export::istr::h1159eb26a6442e00
+ 8000831  8000831       14     1                 defmt::export::integers::u16::h62c20429c9636156
+ 8000831  8000831       14     1                 defmt::export::integers::i16::h72143d8f9d9ed052
+ 8000844  8000844       44     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN5defmt6export7display17hdb3144d2dce3a9fdE)
+ 8000844  8000844        0     1                 $t.20
+ 8000845  8000845       44     1                 defmt::export::display::hdb3144d2dce3a9fd
+ 800087c  800087c        0     1                 $d.21
+ 8000888  8000888       10     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN5defmt6export6header17h9999599e7d3b4117E)
+ 8000888  8000888        0     1                 $t.22
+ 8000889  8000889       10     1                 defmt::export::header::h9999599e7d3b4117
+ 8000898  8000898       10     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN60_$LT$defmt..export..FmtWrite$u20$as$u20$core..fmt..Write$GT$9write_str17he935db15f0be707bE)
+ 8000898  8000898        0     1                 $t.23
+ 8000899  8000899       10     1                 _$LT$defmt..export..FmtWrite$u20$as$u20$core..fmt..Write$GT$::write_str::he935db15f0be707b
+ 80008a8  80008a8        2     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text.__defmt_default_timestamp)
+ 80008a8  80008a8        0     1                 $t.38
+ 80008a9  80008a9        2     1                 __defmt_default_timestamp
+ 80008aa  80008aa        8     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text.__defmt_default_panic)
+ 80008aa  80008aa        0     1                 $t.39
+ 80008ab  80008ab        8     1                 __defmt_default_panic
+ 80008b2  80008b2       14     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text._ZN5defmt5flush17h3195d7bf56645273E)
+ 80008b2  80008b2        0     1                 $t.40
+ 80008b3  80008b3       14     1                 defmt::flush::h3195d7bf56645273
+ 80008c8  80008c8       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.text.unlikely._ZN5defmt13default_panic19panic_cold_explicit17h485eafd96a8216b9E)
+ 80008c8  80008c8        0     1                 $t.67
+ 80008c9  80008c9       10     1                 defmt::default_panic::panic_cold_explicit::h485eafd96a8216b9
+ 80008d4  80008d4        0     1                 $d.68
+ 80008d8  80008d8       18     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.text._ZN20cortex_m_semihosting5debug4exit17h5e9121fd0ad0ec55E)
+ 80008d8  80008d8        0     1                 $t.4
+ 80008d9  80008d9       18     1                 cortex_m_semihosting::debug::exit::h5e9121fd0ad0ec55
+ 80008e8  80008e8        0     1                 $d.5
+ 80008f0  80008f0       12     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN4core3ptr14write_volatile17h030a8c33d59adb43E)
+ 80008f0  80008f0        0     1                 $t.31
+ 80008f1  80008f1       12     1                 core::ptr::write_volatile::h030a8c33d59adb43
+ 8000904  8000904       40     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN4core3ptr14write_volatile18precondition_check17h8046f0c54d2a120fE)
+ 8000904  8000904        0     1                 $t.32
+ 8000905  8000905       40     1                 core::ptr::write_volatile::precondition_check::h8046f0c54d2a120f
+ 8000938  8000938        0     1                 $d.33
+ 8000944  8000944        6     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal2bb5clear17h4027539bb31cc221E)
+ 8000944  8000944        0     1                 $t.62
+ 8000945  8000945        6     1                 stm32f4xx_hal::bb::clear::h4027539bb31cc221
+ 800094a  800094a        6     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal2bb3set17h3064a8cc55da19cfE)
+ 800094a  800094a        0     1                 $t.64
+ 800094b  800094b        6     1                 stm32f4xx_hal::bb::set::h3064a8cc55da19cf
+ 8000950  8000950        6     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal2bb3set17h54f25f115d4cacc8E)
+ 8000950  8000950        0     1                 $t.65
+ 8000951  8000951        6     1                 stm32f4xx_hal::bb::set::h54f25f115d4cacc8
+ 8000958  8000958        c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal2bb5write17h2970abad48a101d8E)
+ 8000958  8000958        0     1                 $t.67
+ 8000959  8000959        c     1                 stm32f4xx_hal::bb::write::h2970abad48a101d8
+ 8000960  8000960        0     1                 $d.68
+ 8000964  8000964        c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal2bb5write17hc7b93b4923405cffE)
+ 8000964  8000964        0     1                 $t.71
+ 8000965  8000965        c     1                 stm32f4xx_hal::bb::write::hc7b93b4923405cff
+ 800096c  800096c        0     1                 $d.72
+ 8000970  8000970        8     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal4gpio5gpiox17ha11979117324ddabE)
+ 8000970  8000970        0     1                 $t.356
+ 8000971  8000971        8     1                 stm32f4xx_hal::gpio::gpiox::ha11979117324ddab
+ 8000974  8000974        0     1                 $d.357
+ 8000978  8000978       12     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal3rcc6Enable16enable_unchecked17h557466744cec6821E)
+ 8000978  8000978        0     1                 $t.459
+ 8000979  8000979       12     1                 stm32f4xx_hal::rcc::Enable::enable_unchecked::h557466744cec6821
+ 800098a  800098a       14     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal3rcc5Reset15reset_unchecked17h60cb5455c3971e32E)
+ 800098a  800098a        0     1                 $t.467
+ 800098b  800098b       14     1                 stm32f4xx_hal::rcc::Reset::reset_unchecked::h60cb5455c3971e32
+ 800099e  800099e       10     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text._ZN13stm32f4xx_hal4gpio2f45gpioc84_$LT$impl$u20$stm32f4xx_hal..gpio..GpioExt$u20$for$u20$stm32f4..stm32f411..GPIOC$GT$5split17h630e1fba6457a3acE)
+ 800099e  800099e        0     1                 $t.1984
+ 800099f  800099f       10     1                 stm32f4xx_hal::gpio::f4::gpioc::_$LT$impl$u20$stm32f4xx_hal..gpio..GpioExt$u20$for$u20$stm32f4..stm32f411..GPIOC$GT$::split::h630e1fba6457a3ac
+ 80009ae  80009ae        8     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text.OUTLINED_FUNCTION_122)
+ 80009ae  80009ae        0     1                 $t.2260
+ 80009af  80009af        8     1                 OUTLINED_FUNCTION_122
+ 80009b6  80009b6        a     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.text.OUTLINED_FUNCTION_124)
+ 80009b6  80009b6        0     1                 $t.2262
+ 80009b7  80009b7        a     1                 OUTLINED_FUNCTION_124
+ 80009c0  80009c0        2     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.text.DefaultHandler_)
+ 80009c0  80009c0        0     1                 $t.7
+ 80009c1  80009c1        2     1                 DefaultHandler_
+ 80009c2  80009c2        2     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.text.DefaultPreInit)
+ 80009c2  80009c2        0     1                 $t.8
+ 80009c3  80009c3        2     1                 DefaultPreInit
+ 80009c4  80009c4       16     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.text._ZN126_$LT$cortex_m..critical_section..single_core_critical_section..SingleCoreCriticalSection$u20$as$u20$critical_section..Impl$GT$7acquire17hcea02a719c469b5eE)
+ 80009c4  80009c4        0     1                 $t.5
+ 80009c5  80009c5       16     1                 _$LT$cortex_m..critical_section..single_core_critical_section..SingleCoreCriticalSection$u20$as$u20$critical_section..Impl$GT$::acquire::hcea02a719c469b5e
+ 80009da  80009da        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.text._critical_section_1_0_acquire)
+ 80009da  80009da        0     1                 $t.18
+ 80009db  80009db        4     1                 _critical_section_1_0_acquire
+ 80009de  80009de        8     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.text._critical_section_1_0_release)
+ 80009de  80009de        0     1                 $t.19
+ 80009df  80009df        8     1                 _critical_section_1_0_release
+ 80009e6  80009e6        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.text.__cpsid)
+ 80009e6  80009e6        0     1                 $t.3
+ 80009e7  80009e7        4     1                 __cpsid
+ 80009ea  80009ea        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.text.__cpsie)
+ 80009ea  80009ea        0     1                 $t.4
+ 80009eb  80009eb        4     1                 __cpsie
+ 80009ee  80009ee        6     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.text.__dsb)
+ 80009ee  80009ee        0     1                 $t.7
+ 80009ef  80009ef        6     1                 __dsb
+ 80009f4  80009f4        6     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.text.__primask_r)
+ 80009f4  80009f4        0     1                 $t.12
+ 80009f5  80009f5        6     1                 __primask_r
+ 80009fa  80009fa        4     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.text.__udf)
+ 80009fa  80009fa        0     1                 $t.16
+ 80009fb  80009fb        4     1                 __udf
+ 80009fe  80009fe       22     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN36_$LT$T$u20$as$u20$core..any..Any$GT$7type_id17h7ed702a59b81a006E)
+ 80009fe  80009fe        0     1                 $t.56
+ 80009ff  80009ff       22     1                 _$LT$T$u20$as$u20$core..any..Any$GT$::type_id::h7ed702a59b81a006
+ 8000a20  8000a20       14     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core6option13unwrap_failed17h2d685c49a3d67099E)
+ 8000a20  8000a20        0     1                 $t.138
+ 8000a21  8000a21       14     1                 core::option::unwrap_failed::h2d685c49a3d67099
+ 8000a34  8000a34      14e     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN73_$LT$core..panic..panic_info..PanicInfo$u20$as$u20$core..fmt..Display$GT$3fmt17hbec9cc6af1bde1eeE)
+ 8000a34  8000a34        0     1                 $t.141
+ 8000a35  8000a35      14e     1                 _$LT$core..panic..panic_info..PanicInfo$u20$as$u20$core..fmt..Display$GT$::fmt::hbec9cc6af1bde1ee
+ 8000b82  8000b82       22     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core9panicking9panic_fmt17h28c5cd6a06c7045dE)
+ 8000b82  8000b82        0     1                 $t.142
+ 8000b83  8000b83       22     1                 core::panicking::panic_fmt::h28c5cd6a06c7045d
+ 8000ba4  8000ba4       36     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core9panicking18panic_nounwind_fmt17hec333b97e7c5809cE)
+ 8000ba4  8000ba4        0     1                 $t.143
+ 8000ba5  8000ba5       36     1                 core::panicking::panic_nounwind_fmt::hec333b97e7c5809c
+ 8000bda  8000bda       26     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core9panicking5panic17h8721709183eb0464E)
+ 8000bda  8000bda        0     1                 $t.144
+ 8000bdb  8000bdb       26     1                 core::panicking::panic::h8721709183eb0464
+ 8000c00  8000c00       2c     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core9panicking14panic_nounwind17h4d743d62ef9cd589E)
+ 8000c00  8000c00        0     1                 $t.145
+ 8000c01  8000c01       2c     1                 core::panicking::panic_nounwind::h4d743d62ef9cd589
+ 8000c2c  8000c2c       3a     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core9panicking14panic_explicit17h1be9b407d36ee63eE)
+ 8000c2c  8000c2c        0     1                 $t.147
+ 8000c2d  8000c2d       3a     1                 core::panicking::panic_explicit::h1be9b407d36ee63e
+ 8000c66  8000c66      17e     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN4core3fmt5write17h280efea8de8bc125E)
+ 8000c66  8000c66        0     1                 $t.201
+ 8000c67  8000c67      17e     1                 core::fmt::write::h280efea8de8bc125
+ 8000de4  8000de4      2d0     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN4core3fmt9Formatter12pad_integral17h303b437430da1b5fE)
+ 8000de4  8000de4        0     1                 $t.202
+ 8000de5  8000de5      2d0     1                 core::fmt::Formatter::pad_integral::h303b437430da1b5f
+ 8000ee6  8000ee6        0     1                 $d.203
+ 8000eea  8000eea        0     1                 $t.204
+ 80010b4  80010b4       46     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN4core3fmt9Formatter12pad_integral12write_prefix17h7a93690890d60df2E)
+ 80010b4  80010b4        0     1                 $t.205
+ 80010b5  80010b5       46     1                 core::fmt::Formatter::pad_integral::write_prefix::h7a93690890d60df2
+ 80010fc  80010fc      25c     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN4core3fmt9Formatter3pad17ha302e88c54a8dea7E)
+ 80010fc  80010fc        0     1                 $t.206
+ 80010fd  80010fd      25c     1                 core::fmt::Formatter::pad::ha302e88c54a8dea7
+ 80012d0  80012d0        0     1                 $d.207
+ 80012d4  80012d4        0     1                 $t.208
+ 8001358  8001358       3e     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core5slice5index26slice_start_index_len_fail17h060241da32ffa7d7E)
+ 8001358  8001358        0     1                 $t.251
+ 8001359  8001359       3e     1                 core::slice::index::slice_start_index_len_fail::h060241da32ffa7d7
+ 8001396  8001396      4d8     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN4core3str5count14do_count_chars17h7a31731b36e516a6E)
+ 8001396  8001396        0     1                 $t.262
+ 8001397  8001397      4d8     1                 core::str::count::do_count_chars::h7a31731b36e516a6
+ 800186e  800186e       26     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core9panicking11panic_const24panic_const_add_overflow17hd0e4327e5cc4950eE)
+ 800186e  800186e        0     1                 $t.393
+ 800186f  800186f       26     1                 core::panicking::panic_const::panic_const_add_overflow::hd0e4327e5cc4950e
+ 8001894  8001894       26     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text.unlikely._ZN4core9panicking11panic_const24panic_const_sub_overflow17ha2586ec0d432ce15E)
+ 8001894  8001894        0     1                 $t.394
+ 8001895  8001895       26     1                 core::panicking::panic_const::panic_const_sub_overflow::ha2586ec0d432ce15
+ 80018ba  80018ba       ee     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$u32$GT$3fmt17he75e601e6150db08E)
+ 80018ba  80018ba        0     1                 $t.457
+ 80018bb  80018bb       ee     1                 core::fmt::num::imp::_$LT$impl$u20$core..fmt..Display$u20$for$u20$u32$GT$::fmt::he75e601e6150db08
+ 80018bb  80018bb       ee     1                 core::fmt::num::imp::_$LT$impl$u20$core..fmt..Display$u20$for$u20$usize$GT$::fmt::h11629d743f225d51
+ 80019a8  80019a8        c     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.text._ZN44_$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$3fmt17h362a5dd8c72c96b5E)
+ 80019a8  80019a8        0     1                 $t.488
+ 80019a9  80019a9        c     1                 _$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$::fmt::h362a5dd8c72c96b5
+ 80019b4  80019b4        4     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.057.rcgu.o):(.text._ZN17compiler_builtins3arm14__aeabi_memcpy17ha854d60a53c65e3bE)
+ 80019b4  80019b4        0     1                 $t.0
+ 80019b5  80019b5        4     1                 compiler_builtins::arm::__aeabi_memcpy::ha854d60a53c65e3b
+ 80019b8  80019b8      148     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.007.rcgu.o):(.text._ZN17compiler_builtins3mem6memcpy17he6b4d94386ad08c7E)
+ 80019b8  80019b8        0     1                 $t.0
+ 80019b9  80019b9      148     1                 compiler_builtins::mem::memcpy::he6b4d94386ad08c7
+ 8001b00  8001b00        4     2         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.260.rcgu.o):(.text.__aeabi_memcpy)
+ 8001b00  8001b00        0     1                 $t.0
+ 8001b01  8001b01        4     1                 __aeabi_memcpy
+ 8001b04  8001b04       18     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.HardFaultTrampoline)
+ 8001b04  8001b04        0     1                 $t.0
+ 8001b05  8001b05       18     1                 HardFaultTrampoline
+ 8001b1c  8001b1c        8     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.HardFault.user)
+ 8001b1c  8001b1c        0     1                 $t.3
+ 8001b1d  8001b1d        8     1                 HardFault
+ 8001b24  8001b24        2     2         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.HardFault.default)
+ 8001b24  8001b24        0     1                 $t.6
+ 8001b25  8001b25        2     1                 HardFault_
+ 8001b26  8001b26        2     1         . = ALIGN ( 4 )
+ 8001b28  8001b28        0     1         __etext = .
+ 8001b28  8001b28      730     4 .rodata
+ 8001b28  8001b28        0     1         . = ALIGN ( 4 )
+ 8001b28  8001b28        0     1         __srodata = .
+ 8001b28  8001b28       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.rodata..L__unnamed_1)
+ 8001b38  8001b38       a6     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_1)
+ 8001bde  8001bde       62     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_11)
+ 8001c40  8001c40       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_3)
+ 8001c50  8001c50       5e     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_12)
+ 8001cb0  8001cb0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_2)
+ 8001cc0  8001cc0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_8)
+ 8001cd0  8001cd0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_7)
+ 8001ce0  8001ce0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_6)
+ 8001cf0  8001cf0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_5)
+ 8001d00  8001d00       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_4)
+ 8001d10  8001d10       1e     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_13)
+ 8001d30  8001d30        8     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_9)
+ 8001d38  8001d38       5a     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_14)
+ 8001d94  8001d94       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.rodata..L__unnamed_10)
+ 8001da4  8001da4       6e     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.rodata..L__unnamed_1)
+ 8001e12  8001e12       6f     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.rodata..L__unnamed_2)
+ 8001e81  8001e81       1d     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.rodata..L__unnamed_5)
+ 8001ea0  8001ea0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.rodata..L__unnamed_3)
+ 8001eb0  8001eb0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.rodata..L__unnamed_4)
+ 8001ec0  8001ec0       18     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.rodata..L__unnamed_1)
+ 8001ed8  8001ed8        8     4         <internal>:(.rodata.cst8)
+ 8001ee0  8001ee0        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.rodata..L__unnamed_5)
+ 8001ee1  8001ee1       56     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.rodata..L__unnamed_8)
+ 8001f38  8001f38       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.rodata..L__unnamed_6)
+ 8001f48  8001f48       2a     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.rodata..L__unnamed_148)
+ 8001f74  8001f74        8     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.rodata..L__unnamed_7)
+ 8001f7c  8001f7c       51     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.rodata..L__unnamed_149)
+ 8001fd0  8001fd0       10     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.rodata..L__unnamed_8)
+ 8001fe0  8001fe0       6f     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.rodata..L__unnamed_9)
+ 800204f  800204f       1c     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.146)
+ 800206c  800206c        8     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.147)
+ 800206c  800206c        8     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.147
+ 8002074  8002074       21     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.148)
+ 8002098  8002098        8     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.149)
+ 8002098  8002098        8     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.149
+ 80020a0  80020a0        1     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.240)
+ 80020a0  80020a0        1     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.240
+ 80020a1  80020a1       2b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.250)
+ 80020a1  80020a1       2b     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.250
+ 80020cc  80020cc       18     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.251)
+ 80020cc  80020cc       18     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.251
+ 80020e4  80020e4        c     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.252)
+ 80020e4  80020e4        c     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.252
+ 80020f0  80020f0        1     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.253)
+ 80020f0  80020f0        1     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.253
+ 80020f4  80020f4       10     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.254)
+ 80020f4  80020f4       10     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.254
+ 8002104  8002104       1d     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.255)
+ 8002124  8002124       10     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.256)
+ 8002124  8002124       10     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.256
+ 8002134  8002134        e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.258)
+ 8002144  8002144        8     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.259)
+ 8002144  8002144        8     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.259
+ 800214c  800214c       c8     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.315)
+ 800214c  800214c       c8     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.315
+ 8002214  8002214       12     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.335)
+ 8002226  8002226       22     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.336)
+ 8002248  8002248       10     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.rodata..Lanon.8e20e5a57300696868f69cbf0eeed1b5.337)
+ 8002248  8002248       10     1                 .Lanon.8e20e5a57300696868f69cbf0eeed1b5.337
+ 8002258  8002258        0     1         . = ALIGN ( 4 )
+ 8002258  8002258        0     1         __erodata = .
+20000000  8002258       38     4 .data
+20000000  8002258        0     1         . = ALIGN ( 4 )
+20000000  8002258        0     1         __sdata = .
+20000000  8002258       30     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.data._SEGGER_RTT)
+20000000  8002258       30     1                 _SEGGER_RTT
+20000030  8002288        6     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.data)
+20000030  8002288        6     1                 defmt_rtt::handle::NAME::hf825084eba911923
+20000036  800228e        2     1         . = ALIGN ( 4 )
+20000038  8002290        0     1 . = ALIGN ( 4 )
+20000038  8002290        0     1 __edata = .
+20000038  8002290        0     1 __sidata = LOADADDR ( .data )
+ 80022a0  80022a0        0    32 .gnu.sgstubs
+ 80022a0  80022a0        0     1         . = ALIGN ( 32 )
+ 80022a0  80022a0        0     1         __veneer_base = .
+ 80022a0  80022a0        0     1         . = ALIGN ( 32 )
+ 80022a0  80022a0        0     1 . = ALIGN ( 32 )
+ 80022a0  80022a0        0     1 __veneer_limit = .
+20000038 20000038        8     4 .bss
+20000038 20000038        0     1         . = ALIGN ( 4 )
+20000038 20000038        0     1         __sbss = .
+20000038 20000038        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.bss._ZN11panic_probe3imp5panic8PANICKED17hd55157cc87a868e6E.0)
+20000038 20000038        1     1                 panic_probe::imp::panic::PANICKED::hd55157cc87a868e6 (.0)
+20000039 20000039        5     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.bss..L_MergedGlobals)
+20000039 20000039        1     1                 defmt_rtt::TAKEN::he3d0b42628cd5c0b (.0)
+2000003a 2000003a        1     1                 defmt_rtt::CS_RESTORE::h199e90b6b3b0135f (.0)
+2000003b 2000003b        3     1                 defmt_rtt::ENCODER::h2ed46413ee7e3503
+2000003e 2000003e        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.bss.DEVICE_PERIPHERALS)
+2000003e 2000003e        1     1                 DEVICE_PERIPHERALS
+2000003f 2000003f        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.bss._ZN8cortex_m10peripheral5TAKEN17h2fd543dfc63a4d26E)
+2000003f 2000003f        1     1                 cortex_m::peripheral::TAKEN::h2fd543dfc63a4d26
+20000040 20000040        0     1         . = ALIGN ( 4 )
+20000040 20000040        0     1 . = ALIGN ( 4 )
+20000040 20000040        0     1 __ebss = .
+20000040 20000040      200     4 .uninit
+20000040 20000040        0     1         . = ALIGN ( 4 )
+20000040 20000040        0     1         __suninit = .
+20000040 20000040      200     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.uninit.defmt-rtt.BUFFER)
+20000040 20000040      200     1                 defmt_rtt::handle::BUFFER::h2be32c61a2efdcda
+20000240 20000240        0     1         . = ALIGN ( 4 )
+20000240 20000240        0     1         __euninit = .
+20000240 20000240        0     1 PROVIDE ( __sheap = __euninit )
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 
+20000240 20000240        0     1 PROVIDE ( WWDG = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( PVD = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TAMP_STAMP = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( RTC_WKUP = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( FLASH = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( RCC = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( EXTI0 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( EXTI1 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( EXTI2 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( EXTI3 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( EXTI4 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM0 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM1 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM2 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM3 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM4 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM5 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM6 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( ADC = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( EXTI9_5 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM1_BRK_TIM9 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM1_UP_TIM10 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM1_TRG_COM_TIM11 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM1_CC = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM2 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM3 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM4 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( I2C1_EV = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( I2C1_ER = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( I2C2_EV = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( I2C2_ER = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( SPI1 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( SPI2 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( USART1 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( USART2 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( EXTI15_10 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( RTC_ALARM = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( OTG_FS_WKUP = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA1_STREAM7 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( SDIO = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( TIM5 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( SPI3 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM0 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM1 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM2 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM3 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM4 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( OTG_FS = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM5 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM6 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( DMA2_STREAM7 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( USART6 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( I2C3_EV = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( I2C3_ER = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( FPU = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( SPI4 = DefaultHandler )
+20000240 20000240        0     1 PROVIDE ( SPI5 = DefaultHandler )
+20000240 20000240        0     1 
+20000240 20000240        0     1 PROVIDE ( _defmt_timestamp = __defmt_default_timestamp )
+20000240 20000240        0     1 PROVIDE ( _defmt_panic = __defmt_default_panic )
+       0        0        a     1 .defmt
+       0        0        1     1         . = 1
+       1        1        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.defmt.prim.{"package":"defmt","tag":"defmt_prim","data":"{=__internal_Display}","disambiguator":"14852757176555979580","crate_name":"defmt"})
+       1        1        1     1                 {"package":"defmt","tag":"defmt_prim","data":"{=__internal_Display}","disambiguator":"14852757176555979580","crate_name":"defmt"}
+       2        2        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.defmt.{"package":"my-app","tag":"defmt_info","data":"info","disambiguator":"7186774231853962831","crate_name":"levels"})
+       2        2        1     1                 {"package":"my-app","tag":"defmt_info","data":"info","disambiguator":"7186774231853962831","crate_name":"levels"}
+       3        3        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.defmt.{"package":"my-app","tag":"defmt_trace","data":"trace","disambiguator":"16970551351450603024","crate_name":"levels"})
+       3        3        1     1                 {"package":"my-app","tag":"defmt_trace","data":"trace","disambiguator":"16970551351450603024","crate_name":"levels"}
+       4        4        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.defmt.{"package":"my-app","tag":"defmt_debug","data":"debug","disambiguator":"9834033591773918875","crate_name":"levels"})
+       4        4        1     1                 {"package":"my-app","tag":"defmt_debug","data":"debug","disambiguator":"9834033591773918875","crate_name":"levels"}
+       5        5        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.defmt.{"package":"panic-probe","tag":"defmt_error","data":"{}","disambiguator":"3281125884690968605","crate_name":"panic_probe"})
+       5        5        1     1                 {"package":"panic-probe","tag":"defmt_error","data":"{}","disambiguator":"3281125884690968605","crate_name":"panic_probe"}
+       6        6        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.defmt.{"package":"gated-boot","tag":"defmt_info","data":"Turning off LED","disambiguator":"16680056896761737818","crate_name":"gated_boot"})
+       6        6        1     1                 {"package":"gated-boot","tag":"defmt_info","data":"Turning off LED","disambiguator":"16680056896761737818","crate_name":"gated_boot"}
+       7        7        1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.defmt.{"package":"gated-boot","tag":"defmt_info","data":"Jumping to somewhere else","disambiguator":"6532919224167040146","crate_name":"gated_boot"})
+       7        7        1     1                 {"package":"gated-boot","tag":"defmt_info","data":"Jumping to somewhere else","disambiguator":"6532919224167040146","crate_name":"gated_boot"}
+       8        8        2     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.defmt.end)
+       8        8        1     1                 _defmt_version_ = 4
+       9        9        1     1                 _defmt_encoding_ = rzcobs
+       a        a        0     1         __DEFMT_MARKER_END = .
+20000240 20000240        0     1 
+       0        0     2f97     1 .debug_abbrev
+       0        0       87     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.debug_abbrev)
+      87       87       c6     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.debug_abbrev)
+     14d      14d      2dd     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.debug_abbrev)
+     42a      42a      3c0     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.debug_abbrev)
+     7ea      7ea      34d     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.debug_abbrev)
+     b37      b37      3d0     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.debug_abbrev)
+     f07      f07      36d     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.debug_abbrev)
+    1274     1274      631     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.debug_abbrev)
+    18a5     18a5      159     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.debug_abbrev)
+    19fe     19fe      23f     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.debug_abbrev)
+    1c3d     1c3d      3d1     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.debug_abbrev)
+    200e     200e      1b9     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_abbrev)
+    21c7     21c7      28b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.debug_abbrev)
+    2452     2452       bd     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.123.rcgu.o):(.debug_abbrev)
+    250f     250f       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.134.rcgu.o):(.debug_abbrev)
+    253d     253d       63     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.057.rcgu.o):(.debug_abbrev)
+    25a0     25a0       d4     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.007.rcgu.o):(.debug_abbrev)
+    2674     2674       bd     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.149.rcgu.o):(.debug_abbrev)
+    2731     2731       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.190.rcgu.o):(.debug_abbrev)
+    275f     275f      12a     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.005.rcgu.o):(.debug_abbrev)
+    2889     2889       9b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.195.rcgu.o):(.debug_abbrev)
+    2924     2924       9b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.197.rcgu.o):(.debug_abbrev)
+    29bf     29bf       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.213.rcgu.o):(.debug_abbrev)
+    29ed     29ed       bd     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.235.rcgu.o):(.debug_abbrev)
+    2aaa     2aaa       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.237.rcgu.o):(.debug_abbrev)
+    2ad8     2ad8      177     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.001.rcgu.o):(.debug_abbrev)
+    2c4f     2c4f       9f     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.238.rcgu.o):(.debug_abbrev)
+    2cee     2cee       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.244.rcgu.o):(.debug_abbrev)
+    2d1c     2d1c       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.260.rcgu.o):(.debug_abbrev)
+    2d4a     2d4a       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.277.rcgu.o):(.debug_abbrev)
+    2d78     2d78       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.281.rcgu.o):(.debug_abbrev)
+    2da6     2da6       9b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.296.rcgu.o):(.debug_abbrev)
+    2e41     2e41       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.323.rcgu.o):(.debug_abbrev)
+    2e6f     2e6f       2e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.332.rcgu.o):(.debug_abbrev)
+    2e9d     2e9d       5f     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.303.rcgu.o):(.debug_abbrev)
+    2efc     2efc       9b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.011.rcgu.o):(.debug_abbrev)
+       0        0    7e5b8     1 .debug_info
+       0        0      12b     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.debug_info)
+     12b      12b      142     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.debug_info)
+     26d      26d      bc2     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.debug_info)
+     e2f      e2f     2080     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.debug_info)
+    2eaf     2eaf     1ee2     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.debug_info)
+    4d91     4d91     352b     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.debug_info)
+    82bc     82bc     1757     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.debug_info)
+    9a13     9a13    4f4c9     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.debug_info)
+   58edc    58edc     175a     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.debug_info)
+   5a636    5a636      81e     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.debug_info)
+   5ae54    5ae54     1b65     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.debug_info)
+   5c9b9    5c9b9      a0d     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_info)
+   5d3c6    5d3c6    1db03     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.debug_info)
+   7aec9    7aec9      170     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.123.rcgu.o):(.debug_info)
+   7b039    7b039       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.134.rcgu.o):(.debug_info)
+   7b084    7b084      167     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.057.rcgu.o):(.debug_info)
+   7b1eb    7b1eb      8e6     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.007.rcgu.o):(.debug_info)
+   7bad1    7bad1      170     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.149.rcgu.o):(.debug_info)
+   7bc41    7bc41       51     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.190.rcgu.o):(.debug_info)
+   7bc92    7bc92      b02     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.005.rcgu.o):(.debug_info)
+   7c794    7c794      13a     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.195.rcgu.o):(.debug_info)
+   7c8ce    7c8ce      196     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.197.rcgu.o):(.debug_info)
+   7ca64    7ca64       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.213.rcgu.o):(.debug_info)
+   7caaf    7caaf      158     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.235.rcgu.o):(.debug_info)
+   7cc07    7cc07       51     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.237.rcgu.o):(.debug_info)
+   7cc58    7cc58      fcc     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.001.rcgu.o):(.debug_info)
+   7dc24    7dc24      186     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.238.rcgu.o):(.debug_info)
+   7ddaa    7ddaa       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.244.rcgu.o):(.debug_info)
+   7ddf5    7ddf5       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.260.rcgu.o):(.debug_info)
+   7de40    7de40       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.277.rcgu.o):(.debug_info)
+   7de8b    7de8b       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.281.rcgu.o):(.debug_info)
+   7ded6    7ded6      1dc     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.296.rcgu.o):(.debug_info)
+   7e0b2    7e0b2       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.323.rcgu.o):(.debug_info)
+   7e0fd    7e0fd       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.332.rcgu.o):(.debug_info)
+   7e148    7e148       a1     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.303.rcgu.o):(.debug_info)
+   7e1e9    7e1e9      3cf     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.011.rcgu.o):(.debug_info)
+       0        0     4840     1 .debug_aranges
+       0        0       40     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.debug_aranges)
+      40       40       40     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.debug_aranges)
+      80       80       68     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.debug_aranges)
+      e8       e8       e0     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.debug_aranges)
+     1c8      1c8       50     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.debug_aranges)
+     218      218      788     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.debug_aranges)
+     9a0      9a0       a8     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.debug_aranges)
+     a48      a48     2760     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.debug_aranges)
+    31a8     31a8      200     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.debug_aranges)
+    33a8     33a8       60     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.debug_aranges)
+    3408     3408       a0     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.debug_aranges)
+    34a8     34a8      110     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_aranges)
+    35b8     35b8      ed8     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.debug_aranges)
+    4490     4490       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.123.rcgu.o):(.debug_aranges)
+    44b0     44b0       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.134.rcgu.o):(.debug_aranges)
+    44d0     44d0       68     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.057.rcgu.o):(.debug_aranges)
+    4538     4538       90     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.007.rcgu.o):(.debug_aranges)
+    45c8     45c8       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.149.rcgu.o):(.debug_aranges)
+    45e8     45e8       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.190.rcgu.o):(.debug_aranges)
+    4608     4608       28     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.005.rcgu.o):(.debug_aranges)
+    4630     4630       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.195.rcgu.o):(.debug_aranges)
+    4650     4650       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.197.rcgu.o):(.debug_aranges)
+    4670     4670       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.213.rcgu.o):(.debug_aranges)
+    4690     4690       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.235.rcgu.o):(.debug_aranges)
+    46b0     46b0       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.237.rcgu.o):(.debug_aranges)
+    46d0     46d0       28     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.001.rcgu.o):(.debug_aranges)
+    46f8     46f8       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.238.rcgu.o):(.debug_aranges)
+    4718     4718       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.244.rcgu.o):(.debug_aranges)
+    4738     4738       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.260.rcgu.o):(.debug_aranges)
+    4758     4758       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.277.rcgu.o):(.debug_aranges)
+    4778     4778       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.281.rcgu.o):(.debug_aranges)
+    4798     4798       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.296.rcgu.o):(.debug_aranges)
+    47b8     47b8       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.323.rcgu.o):(.debug_aranges)
+    47d8     47d8       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.332.rcgu.o):(.debug_aranges)
+    47f8     47f8       20     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.303.rcgu.o):(.debug_aranges)
+    4818     4818       28     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.011.rcgu.o):(.debug_aranges)
+       0        0    202d0     1 .debug_ranges
+       0        0       18     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.debug_ranges)
+      18       18       30     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.debug_ranges)
+      48       48       40     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.debug_ranges)
+      88       88      2e8     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.debug_ranges)
+     370      370      120     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.debug_ranges)
+     490      490      2f0     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.debug_ranges)
+     780      780      358     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.debug_ranges)
+     ad8      ad8     5d90     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.debug_ranges)
+    6868     6868      1e0     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.debug_ranges)
+    6a48     6a48       48     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.debug_ranges)
+    6a90     6a90      250     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.debug_ranges)
+    6ce0     6ce0      100     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_ranges)
+    6de0     6de0    186e8     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.debug_ranges)
+   1f4c8    1f4c8       30     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.123.rcgu.o):(.debug_ranges)
+   1f4f8    1f4f8       a0     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.057.rcgu.o):(.debug_ranges)
+   1f598    1f598      2f0     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.007.rcgu.o):(.debug_ranges)
+   1f888    1f888       30     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.149.rcgu.o):(.debug_ranges)
+   1f8b8    1f8b8      3b8     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.005.rcgu.o):(.debug_ranges)
+   1fc70    1fc70       30     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.195.rcgu.o):(.debug_ranges)
+   1fca0    1fca0       48     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.197.rcgu.o):(.debug_ranges)
+   1fce8    1fce8       30     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.235.rcgu.o):(.debug_ranges)
+   1fd18    1fd18      440     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.001.rcgu.o):(.debug_ranges)
+   20158    20158       48     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.296.rcgu.o):(.debug_ranges)
+   201a0    201a0      130     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.011.rcgu.o):(.debug_ranges)
+       0        0    e25db     1 .debug_str
+       0        0    e25db     1         <internal>:(.debug_str)
+       0        0       40     1 .comment
+       0        0       40     1         <internal>:(.comment)
+       0        0       3a     1 .ARM.attributes
+       0        0       3a     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.ARM.attributes)
+       0        0     b570     4 .debug_frame
+       0        0       4c     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.debug_frame)
+      4c       4c       a0     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.debug_frame)
+      ec       ec       b8     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.debug_frame)
+     1a4      1a4      220     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.debug_frame)
+     3c4      3c4       a8     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.debug_frame)
+     46c      46c      4b8     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.debug_frame)
+     924      924      180     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.debug_frame)
+     aa4      aa4     5fb8     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.debug_frame)
+    6a5c     6a5c      704     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.debug_frame)
+    7160     7160       a4     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.debug_frame)
+    7204     7204      1a4     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.debug_frame)
+    73a8     73a8      204     4         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_frame)
+    75ac     75ac     38c4     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.debug_frame)
+    ae70     ae70       30     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.123.rcgu.o):(.debug_frame)
+    aea0     aea0       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.134.rcgu.o):(.debug_frame)
+    aec4     aec4       d4     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.057.rcgu.o):(.debug_frame)
+    af98     af98      208     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.007.rcgu.o):(.debug_frame)
+    b1a0     b1a0       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.149.rcgu.o):(.debug_frame)
+    b1c4     b1c4       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.190.rcgu.o):(.debug_frame)
+    b1e8     b1e8       64     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.005.rcgu.o):(.debug_frame)
+    b24c     b24c       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.195.rcgu.o):(.debug_frame)
+    b270     b270       38     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.197.rcgu.o):(.debug_frame)
+    b2a8     b2a8       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.213.rcgu.o):(.debug_frame)
+    b2cc     b2cc       34     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.235.rcgu.o):(.debug_frame)
+    b300     b300       30     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.237.rcgu.o):(.debug_frame)
+    b330     b330       64     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.001.rcgu.o):(.debug_frame)
+    b394     b394       38     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.238.rcgu.o):(.debug_frame)
+    b3cc     b3cc       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.244.rcgu.o):(.debug_frame)
+    b3f0     b3f0       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.260.rcgu.o):(.debug_frame)
+    b414     b414       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.277.rcgu.o):(.debug_frame)
+    b438     b438       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.281.rcgu.o):(.debug_frame)
+    b45c     b45c       38     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.296.rcgu.o):(.debug_frame)
+    b494     b494       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.323.rcgu.o):(.debug_frame)
+    b4b8     b4b8       24     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.332.rcgu.o):(.debug_frame)
+    b4dc     b4dc       30     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.303.rcgu.o):(.debug_frame)
+    b50c     b50c       64     4         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.011.rcgu.o):(.debug_frame)
+       0        0    2f5d0     1 .debug_line
+       0        0       eb     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/levels-53cf4f31accaad48.levels.dac3b041ac9443dc-cgu.0.rcgu.o:(.debug_line)
+      eb       eb      103     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.debug_line)
+     1ee      1ee      37c     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.debug_line)
+     56a      56a      896     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.debug_line)
+     e00      e00      6df     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.debug_line)
+    14df     14df      915     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.debug_line)
+    1df4     1df4      685     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.debug_line)
+    2479     2479     cc44     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.debug_line)
+    f0bd     f0bd      7ee     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.debug_line)
+    f8ab     f8ab      196     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.debug_line)
+    fa41     fa41      809     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.debug_line)
+   1024a    1024a      4ad     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_line)
+   106f7    106f7    1b690     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcore-427ff03a8fcba738.rlib(core-427ff03a8fcba738.core.972bf11adf1438c6-cgu.0.rcgu.o):(.debug_line)
+   2bd87    2bd87      204     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.123.rcgu.o):(.debug_line)
+   2bf8b    2bf8b       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.134.rcgu.o):(.debug_line)
+   2bfcd    2bfcd      28e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.057.rcgu.o):(.debug_line)
+   2c25b    2c25b      e4c     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.007.rcgu.o):(.debug_line)
+   2d0a7    2d0a7      1fc     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.149.rcgu.o):(.debug_line)
+   2d2a3    2d2a3       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.190.rcgu.o):(.debug_line)
+   2d2e5    2d2e5      7a5     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.005.rcgu.o):(.debug_line)
+   2da8a    2da8a      1fb     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.195.rcgu.o):(.debug_line)
+   2dc85    2dc85      223     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.197.rcgu.o):(.debug_line)
+   2dea8    2dea8       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.213.rcgu.o):(.debug_line)
+   2deea    2deea      1b2     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.235.rcgu.o):(.debug_line)
+   2e09c    2e09c       49     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.237.rcgu.o):(.debug_line)
+   2e0e5    2e0e5      8d6     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.001.rcgu.o):(.debug_line)
+   2e9bb    2e9bb      215     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.238.rcgu.o):(.debug_line)
+   2ebd0    2ebd0       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.244.rcgu.o):(.debug_line)
+   2ec12    2ec12       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.260.rcgu.o):(.debug_line)
+   2ec54    2ec54       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.277.rcgu.o):(.debug_line)
+   2ec96    2ec96       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.281.rcgu.o):(.debug_line)
+   2ecd8    2ecd8      244     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.296.rcgu.o):(.debug_line)
+   2ef1c    2ef1c       42     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.323.rcgu.o):(.debug_line)
+   2ef5e    2ef5e       4b     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.332.rcgu.o):(.debug_line)
+   2efa9    2efa9       99     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.303.rcgu.o):(.debug_line)
+   2f042    2f042      58e     1         /home/lees/.rustup/toolchains/1.80-x86_64-unknown-linux-gnu/lib/rustlib/thumbv7em-none-eabihf/lib/libcompiler_builtins-44e380169a097313.rlib(compiler_builtins-44e380169a097313.compiler_builtins.53ae8a963f8499b9-cgu.011.rcgu.o):(.debug_line)
+       0        0    1c5b3     1 .debug_loc
+       0        0       29     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libmy_app-ba5b9e76c0d19d75.rlib(my_app-ba5b9e76c0d19d75.my_app.dce61bf85ddce7c4-cgu.0.rcgu.o):(.debug_loc)
+      29       29       80     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libpanic_probe-c29fa14269a3d336.rlib(panic_probe-c29fa14269a3d336.panic_probe.43de65e18232c299-cgu.0.rcgu.o):(.debug_loc)
+      a9       a9      abe     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt_rtt-00c6dc661494adce.rlib(defmt_rtt-00c6dc661494adce.defmt_rtt.37546aad3ed6cc15-cgu.0.rcgu.o):(.debug_loc)
+     b67      b67      153     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libgated_boot-93a54f1c49f370c6.rlib(gated_boot-93a54f1c49f370c6.gated_boot.c9b92b4c101fd097-cgu.0.rcgu.o):(.debug_loc)
+     cba      cba      a61     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libdefmt-8ac96ad51b10b106.rlib(defmt-8ac96ad51b10b106.defmt.e3435270c2e18946-cgu.0.rcgu.o):(.debug_loc)
+    171b     171b      9ad     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_semihosting-930d9d5d6fc88098.rlib(cortex_m_semihosting-930d9d5d6fc88098.cortex_m_semihosting.a6a6716050058f12-cgu.0.rcgu.o):(.debug_loc)
+    20c8     20c8    18de7     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4xx_hal-f5498c1beffe68a4.rlib(stm32f4xx_hal-f5498c1beffe68a4.stm32f4xx_hal.d1c8b721ace4566a-cgu.0.rcgu.o):(.debug_loc)
+   1aeaf    1aeaf      e08     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libstm32f4-4e2421ffea0809d2.rlib(stm32f4-4e2421ffea0809d2.stm32f4.de5b354166ff951c-cgu.0.rcgu.o):(.debug_loc)
+   1bcb7    1bcb7      14f     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m_rt-e01e79a8af2e398e.rlib(cortex_m_rt-e01e79a8af2e398e.cortex_m_rt.5197e58596a71c75-cgu.0.rcgu.o):(.debug_loc)
+   1be06    1be06      740     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(cortex_m-4b72740a5ba61303.cortex_m.9f7f8abc14db14fd-cgu.0.rcgu.o):(.debug_loc)
+   1c546    1c546       6d     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_loc)
+       0        0      2be     1 .debug_pubnames
+       0        0      2be     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_pubnames)
+       0        0       47     1 .debug_pubtypes
+       0        0       47     1         /home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/deps/libcortex_m-4b72740a5ba61303.rlib(bin/thumbv7em-none-eabihf.o):(.debug_pubtypes)
+       0        0     17a0     4 .symtab
+       0        0     17a0     4         <internal>:(.symtab)
+       0        0       fd     1 .shstrtab
+       0        0       fd     1         <internal>:(.shstrtab)
+       0        0     26d9     1 .strtab
+       0        0     26d9     1         <internal>:(.strtab)

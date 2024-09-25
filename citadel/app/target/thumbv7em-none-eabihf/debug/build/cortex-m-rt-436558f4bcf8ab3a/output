@@ -1,0 +1,6 @@
+cargo:rustc-cfg=cortex_m
+cargo:rustc-cfg=armv7m
+cargo:rustc-cfg=has_fpu
+cargo:rustc-link-search=/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/build/cortex-m-rt-436558f4bcf8ab3a/out
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=link.x.in
