@@ -1,0 +1,12 @@
+/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/deps/libfugit-208c0ff3c21822df.rmeta: /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/lib.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/aliases.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/duration.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/helpers.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/instant.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/rate.rs
+
+/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/deps/libfugit-208c0ff3c21822df.rlib: /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/lib.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/aliases.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/duration.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/helpers.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/instant.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/rate.rs
+
+/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/deps/fugit-208c0ff3c21822df.d: /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/lib.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/aliases.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/duration.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/helpers.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/instant.rs /home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/rate.rs
+
+/home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/lib.rs:
+/home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/aliases.rs:
+/home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/duration.rs:
+/home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/helpers.rs:
+/home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/instant.rs:
+/home/lees/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fugit-0.3.7/src/rate.rs:

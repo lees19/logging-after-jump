@@ -1,9 +1,16 @@
-L0_DIR="/home/lees/projects/my-app"
-L1_DIR="/home/lees/projects/my-app/citadel/app"
-L0_DIR_DEBUG="/home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/levels"
-L0_DIR_DEBUG_BIN="/home/lees/projects/my-app/target/thumbv7em-none-eabihf/debug/levels.bin"
-L1_DIR_DEBUG="/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/main"
-L1_DIR_DEBUG_BIN="/home/lees/projects/my-app/citadel/app/target/thumbv7em-none-eabihf/debug/main.bin"
+if ps -p "$$" | grep -q bash; then
+	BOOT="$(readlink -e $(dirname $(realpath $BASH_SOURCE))/..)"
+elif ps -p "$$" | grep -q zsh; then
+	BOOT="$(readlink -e $(dirname "$0")/..)"
+fi
+
+
+L0_DIR="$BOOT"
+L1_DIR="$BOOT/citadel/app"
+L0_DIR_DEBUG="$BOOT/target/thumbv7em-none-eabihf/debug/levels"
+L0_DIR_DEBUG_BIN="$BOOT/target/thumbv7em-none-eabihf/debug/levels.bin"
+L1_DIR_DEBUG="$BOOT/citadel/app/target/thumbv7em-none-eabihf/debug/main"
+L1_DIR_DEBUG_BIN="$BOOT/citadel/app/target/thumbv7em-none-eabihf/debug/main.bin"
 
 build_l0(){ 
     cd $L0_DIR
